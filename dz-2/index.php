@@ -1,6 +1,6 @@
 <?php
 
-require('./dz2.php');
+require('./functions.php');
 
 task1(['аа', 'бб','вв']);
 task1(['аа', 'бб','вв'] , true);
