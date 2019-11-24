@@ -1,6 +1,18 @@
 <?php
 
-// echo 'Задание №1<br>';
+// Преведение к виду PSR -2 
+
+CONST TestContstanta = 'asd';
+$user_name = "Igor";
+function show_something()
+{ 
+    RETURN 'SOMETHING';
+}
+if (1==1) echo 'hi';
+
+
+
+// Задание #1
 
 // $name = 'Николай';
 // $age = '22';
@@ -9,9 +21,7 @@
 // echo 'Мне '. $age . ' года <br>';
 // echo ' “!|/’”\ <br><br>';
 
-// // Задание №2
-
-// echo 'Задание №2<br>';
+// Задание №2
 // const ALL_PICTURES = 80;
 // const FLOMASTERS_PICTURES = 23;
 // const PENCILS_PICTURES = 40;
@@ -57,9 +67,6 @@
 // }
 
 // // Задание №5
-
-// echo 'Задание №5<br>';
-
 // $bmw = [
 //     'model' => 'x5',
 //     'speed' => '120',
@@ -83,31 +90,21 @@
 
 
 // $carsArray = [
-//     $bmw => [
-//         'model' => 'x5',
-//         'speed' => '120',
-//         'doors' => '5',
-//         'year' => '2015'
-//     ],
-//     $toyota = [
-//         'model' => 'carola',
-//         'speed' => '120',
-//         'doors' => '5',
-//         'year' => '2016'
-//     ],
-//     $opel = [
-//         'model' => 'astra',
-//         'speed' => '120',
-//         'doors' => '5',
-//         'year' => '2014'
-//     ],
+//     'bmw' => $bmw , 
+//     'toyota' => $toyota , 
+//     'opel' => $opel 
 // ];
 
-// for($i = 0 ; $i <= sizeof($carsArray);$i++){
-//     echo $i[$bmw];
+// foreach($carsArray as $key => $car){
+//     echo 'Car name is ' .$key . '<br>';
+//     echo 'Car model is ' . $car['model'] . '<br>';
+//     echo 'Car doors are ' . $car['doors'] . '<br>';
+//     echo 'Car year is ' . $car['year'] . '<br>';
+
+//     echo '<br><br>';
 // }
 
-// require('functions.php'); 
+// Функции
 
 // function task1( $arrayStr , $print = false){
 
@@ -125,14 +122,42 @@
 
 
 // function task2($str, ...$numbers ){
-//     // $results = 0;
+
+//     $results;
+
 //     foreach($numbers as $num){
-//         $results = $results + $num;
+//         if($str == '+'){
+//             $results += $num;
+//         }else if ($str == '-'){
+//             $results -= $num;
+//         }else if ($str == '*'){
+//             $results *= $num; 
+//         }else if($str == '/'){
+//             $results /= $num; 
+//         }else{
+//             echo 'Варианты закончились';
+//         }
 //     }
 
 //     return $results;
 // }
-// echo task2('+' ,1,2,3);
+// echo task2('*' ,1,2,3);
+
+// Задание #3
+// function task3($row , $col){
+//     echo '<table>';
+//     for($r=1 ; $r <= $row; $r++){
+//         echo '<tr>';
+    
+//         for($c=1; $c<=$col; $c++){
+//             echo '<td>' . $r * $c .'</td>';
+//         }
+    
+//         echo '</tr>';
+//     }
+//     echo '</table>';
+// }
+// echo task3(10, 10);
 
 // Задание #4
 // $date = '24.02.2016 00:00:00';
