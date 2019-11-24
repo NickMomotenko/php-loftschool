@@ -156,3 +156,5 @@
 //     echo file_get_contents($filename);
 // }
 // echo task6('test.txt');
+
+// тест коммит
