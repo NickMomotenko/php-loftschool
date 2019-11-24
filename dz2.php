@@ -1,3 +1,5 @@
+<?php
+
 // Функции
 
 function task1( $arrayStr , $print = false){

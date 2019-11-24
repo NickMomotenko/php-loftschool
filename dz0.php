@@ -1,3 +1,6 @@
+<?php
+
+
 // Преведение к виду PSR -2 
 
 CONST TestContstanta = 'asd';
